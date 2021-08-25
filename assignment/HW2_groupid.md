@@ -20,7 +20,7 @@ mean(survey$Age)
 
 4.) นักเรียนที่กอดอกแล้วแขนขวาอยู่บนแขนซ้าย
 ```{R}
-Fold=="R on L"
+table(survey$Fold=="R on L")
 ```
 
 5.) ส่วนสูงที่สูงที่สุดใน survey
