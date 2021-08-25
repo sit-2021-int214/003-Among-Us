@@ -8,16 +8,36 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 table(survey$Smoke == "Never")
 ```
 
-2.) Descriptive statistics Statement
+2.) อยากรู้ว่านักเรียนที่ออกกำลังกายเป็นประจำ มีทั้งหมดกี่คน
 ```{R}
-Code here
+table(survey$Exer=="Freq")
+```
+
+3.) ค่าเฉลี่ยของอายุทั้งหมดใน survey
+```{R}
+mean(survey$Age)
+```
+
+4.) นักเรียนที่กอดอกแล้วแขนขวาอยู่บนแขนซ้าย
+```{R}
+Fold=="R on L"
+```
+
+5.) ส่วนสูงที่สูงที่สุดใน survey
+```{R}
+max(survey$Height,na.rm =TRUE)
+```
+
+6.) น้ำหนักหัวใจแมวทุกตัวรวมกัน
+```{R}
+sum(cats$Hwt)
 ```
 
 
 ### Team: xxxxxxx
 
-1. ชื่อ นามสกุล     StudentID: 63130500xxx
-2. ชื่อ นามสกุล     StudentID: 63130500xxx
-3. ชื่อ นามสกุล     StudentID: 63130500xxx
-4. ชื่อ นามสกุล     StudentID: 63130500xxx
-5. ชื่อ นามสกุล     StudentID: 63130500xxx
+1. ชื่อ นางสาวชลิดาภรณ์ ช่วงดอนไพร     StudentID: 63130500018
+2. ชื่อ นายณัฎฐกิตติ์ รัตนศิริพรหม        StudentID: 63130500028
+3. ชื่อ นายธนวัฒน์ แน่จริง              StudentID: 63130500051
+4. ชื่อ นายนัฐวัฒ รอดสมบุญ            StudentID: 63130500069
+
