@@ -3,9 +3,9 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) From survey, most students use left hand writing.
+1.) หาผู้ทำ survey ว่ามีคนที่ไม่เคยสูบบุหรี่กี่คน
 ```{R}
-Code here
+table(survey$Smoke == "Never")
 ```
 
 2.) Descriptive statistics Statement
