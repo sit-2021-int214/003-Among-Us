@@ -1,4 +1,4 @@
-# GroupID-Datasetname
+# 003-Among-Us
 Datasets from: [name](link)
 
 ## Objective
@@ -9,7 +9,8 @@ Datasets from: [name](link)
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-### Team: สแตทมาปัญญาไม่เกิด
+### Team: สแตทมาปัญญาไม่เกิด (003-Among-Us)
+
 
 1. ชื่อ นางสาวชลิดาภรณ์ ช่วงดอนไพร StudentID: 63130500018
 2. ชื่อ นายณัฎฐกิตติ์ รัตนศิริพรหม StudentID: 63130500028
