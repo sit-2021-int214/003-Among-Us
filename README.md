@@ -10,11 +10,11 @@ Datasets from: [name](link)
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 ### Team: xxxxxxx
-1. ชื่อ นามสกุล     StudentID: 63130500xxx
-2. ชื่อ นามสกุล     StudentID: 63130500xxx
-3. ชื่อ นามสกุล     StudentID: 63130500xxx
-4. ชื่อ นามสกุล     StudentID: 63130500xxx
-5. ชื่อ นามสกุล     StudentID: 63130500xxx
+
+ชื่อ นางสาวชลิดาภรณ์ ช่วงดอนไพร StudentID: 63130500018
+ชื่อ นายณัฎฐกิตติ์ รัตนศิริพรหม StudentID: 63130500028
+ชื่อ นายธนวัฒน์ แน่จริง StudentID: 63130500051
+ชื่อ นายนัฐวัฒ รอดสมบุญ StudentID: 63130500069
 
 ### Instructor
 - ATCHARA TRAN-U-RAIKUL
