@@ -24,10 +24,12 @@ Can add more question ....
 
 ```
 # Library
-library(name)
-
+library(readr)      
+library(stringr)   
+library(assertive)  
+library(dplyr)
 # Dataset
-dataset <- read_csv("")
+sat_score <- read_csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/SAT_original.csv")
 ```
 
 ## Step 1: xxxxxx
