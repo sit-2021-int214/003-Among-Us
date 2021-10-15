@@ -29,10 +29,10 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 
 ### Steps 
 
-1. Define a question
-2. Search datasets from Kaggle
-3. Download Library and dataset
-4. Explore the dataset from the original dataset
+1. Search datasets from Kaggle
+2. Explore the dataset from the original dataset
+3. Define a question
+4. Download Library and dataset
 5. Cleaning Dataset
 6. Exploratory Data Analysis
 
