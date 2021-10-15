@@ -1,27 +1,46 @@
 # 003-Among-Us
-Original Datasets from: [safe-sit23 github](https://github.com/safesit23/INT214-Statistics/blob/main/datasets/products_original.csv)
+Original Datasets from: [Among Us Dataset](https://www.kaggle.com/ruchi798/among-us-dataset)
+
 
 ### About's Products Datasets
 
-This dataset is about's sample uniqlo product that sell in 2021. It includes productID, name of products, type of products, price of products, and number of sold.
-
+Among Us, เกมปี 2018 ได้รับความนิยมอย่างมากในช่วงฤดูร้อนปี 2020 นี่คือสถิติต่างๆในเกมของผู้เล่นหนึ่งคนต่อ 100 เกมที่เขาเล่นว่าเขาได้พบเจออะไรบ้าง 
+ชุดข้อมูลนี้เป็นเรื่องเกี่ยวกับ
+- ทีมที่ผู้เล่นได้รับระหว่างเล่น ( Crewmate vs Imposter )
+- ผลลัพท์ของเกมนั้นๆ
+- จำนวนภารกิจที่ผู้เล่นคนนั้นทำสำเร็จ
+- ผลลัพท์ของภารกิจทั้งหมดว่าผู้เล่นทุกคนทำสำเร็จหรือไม่
+- ถูกฆาตกรรมโดย Imposter หรือไม่ 
+- จำนวนผู้เล่นที่เราสังหารเมื่อเป็น Imposter
+- ระยะเวลาของเกม
+- ถูกโหวตออกหรือไม่
+- ไปแก้ไขการ Sabotages ของ Imposter ( ซ่อมไฟเมื่อ Imposter พัง )
 ## Overview
+กลุ่มของเราเลือกชุดข้อมูลนี้เพราะ....
+Among Us เป็นเกมนึงที่ได้รับความนิยมอย่างมากในช่วงปี 2020 Among Us เป็นเกมแนวจับผิด หาคนร้าย ซึ่งในแต่ละคนจะมีการสุ่มบทบาทเป็นของตัวเอง และ มีการเล่น มีการชนะ ได้หลายรูปแบบมาก เช่น ฆ่าทุกคน จับคนร้าย ทำภารกิจครบ โหวตออก และอื่นๆอีกมากมาย แต่ละรอบของเกมมีอะไรเกิดที่ไม่ซ้ำกัน ทำให้มีข้อมูลให้เราได้วิเคราะห์ ได้เล่นกับข้อมูลได้หลายอย่าง 
 
-// Write Statement here
-E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
+สิ่งที่อยากรู้ : 
+1. อัตราชนะของทีมไหนมากกว่ากัน
+2. ค่าเฉลี่ยของการทำภารกิจ
+3. ต้องทำภารกิจประมาณกี่อันต่อคน ภารกิจทั้งทีมถึงจะสำเร็จ , Crewmate win
+4. ต้องฆ่า Crewmate ประมาณกี่คน Imposter ถึงชนะ
+5. ระยะเวลาของเกมมีผลต่อการชนะของเกมไหม
+6. โอกาศกี่เปอร์เซ็นที่เราจะโดน Imposter ฆ่า
 
-### Steps
+### Steps 
 
 1. Define a question
-2. Observe...
-3 วิเคราะห์ บลาๆๆ
+2. Search datasets from Kaggle
+3. Download Library and dataset
+4. Explore the dataset from the original dataset
+5. Cleaning Dataset
+6. Exploratory Data Analysis
 
 ### Tools
 
-อาจจะไปใช้เอกเซลก็ได้ หากแบบมีปัญหา
 - R Language
 - R Studio Desktop
-
+- Excel
 ## Table of Contents
 ไฟล์ มาร์คดาว หรือ rmd เท่านั้น  ไม่ใช่เห็นเป็นซอสโค้ด แต่เห็นเป็นตัวอธิบายเลยๆๆ ให้คนเข้ามาอ่านแล้วเข้าใจได้เลย ((เหมือน assignment))
 
