@@ -45,7 +45,7 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 ไฟล์ มาร์คดาว หรือ rmd เท่านั้น  ไม่ใช่เห็นเป็นซอสโค้ด แต่เห็นเป็นตัวอธิบายเลยๆๆ ให้คนเข้ามาอ่านแล้วเข้าใจได้เลย ((เหมือน assignment))
 
 1. [Exploratory Data Analysis](./01.explore.md)
-2. [Data Visualization](./amongUs_original)
+2. [Data Visualization](./amongUs_original.csv)
 
 ## Resources
 ไฟล์ที่สำคัญๆ ในเรโปนี้ 
@@ -54,8 +54,8 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 ### Important Files in Repository
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
-- [products_original.csv](./products_original.csv): Original Dataset
-- [products_clean.csv](./products_original.csv): Clean Dataset
+- [products_original.csv](./amongUs_original.csv): Original Dataset
+- [products_clean.csv](./clean-data.R): Clean Dataset
 
 ### References
 เปลี่ยนจาก 13m 24s เป็นตัวเลขปกติ
