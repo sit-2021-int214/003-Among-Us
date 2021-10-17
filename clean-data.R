@@ -26,7 +26,7 @@ glimpse(amongUs)
 
 amongUs <- amongUs %>% rename(
   
-  Date = X.ปฟGame.Completed.Date,
+  Date = X.ยปยฟGame.Completed.Date,
   MyTaskCompleted = Task.Completed,
   AllTeamTasksCompleted = All.Tasks.Completed,
   MyKills = Imposter.Kills,
@@ -38,11 +38,11 @@ amongUs <- amongUs %>% rename(
 # Step 4: Cleaning Data
 ## Change data type
 
-glimpse(amongUs) ###เช็ค data type ของข้อมูล
+glimpse(amongUs) ###ร ยชรงยค data type ยขรยงยขรฉรรรร…
 
-### ทกคอลัมเป็น chr
+### ยทยกยครร…ร‘รร ยปรงยน chr
 
-# ลบ - แปลงเป็น numeric
+# ร…ยบ - รกยปร…ยงร ยปรงยน numeric
 is.numeric(amongUs$MyTaskCompleted)
 amongUs$MyTaskCompleted <- amongUs$MyTaskCompleted %>% str_remove("-") %>% as.numeric()
 
@@ -50,7 +50,7 @@ is.numeric(amongUs$MyKills)
 amongUs$MyKills <- amongUs$MyKills %>% str_remove("-") %>% as.numeric()
 
 
-#แปลงเป็นfactor
+#รกยปร…ยงร ยปรงยนfactor
 amongUs$Team <- as.factor(amongUs$Team)
 summary(amongUs$Team)
 
@@ -63,10 +63,11 @@ summary(amongUs$AllTeamTasksCompleted)
 amongUs$Murdered <- as.factor(amongUs$Murdered)
 summary(amongUs$Murdered)
 
-### คอลัม time ไป clean ใน excel โดยใช้ ctrl + H ######
+### ยครร…ร‘ร time รคยป clean รฃยน excel รขยดรรฃยชรฉ ctrl + H ######
 
 amongUs$Ejected  <- as.factor(amongUs$Ejected)
 summary(amongUs$Ejected)
 
 is.numeric(amongUs$MySabotagesFixed)
 amongUs$MySabotagesFixed <- amongUs$MySabotagesFixed %>% str_remove("N/A") %>% as.numeric()
+
