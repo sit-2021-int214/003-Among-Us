@@ -1,4 +1,3 @@
-# Exploratory Data Analysis
 
 ## My Step
 1. Search datasets from Kaggle
