@@ -46,7 +46,7 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 ## Table of Contents
 
 
-1. [All Step](./01.explore.md)
+1. [All Step](./AllStep.md)
 2. [Exploratory Data Analysis](./ExploratoryDataAnalysis.md)
 3. [Data Cleaning and Data Transformation](./DataCleaning.md)
 4. [Define a question](./DefineQuestion.md)
