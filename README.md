@@ -51,7 +51,8 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 
 1. [All Step](./01.explore.md)
 2. [Exploratory Data Analysis](./ExploratoryDataAnalysis.md)
-3. [Data Cleaning and Data Transformation](./)
+3. [Data Cleaning and Data Transformation](./DataCleaning.md)
+4. [Define a question](./DefineQuestion.md)
 ## Resources
 
 
