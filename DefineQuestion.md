@@ -10,20 +10,20 @@
 
 
 ### 1. อัตราชนะของทีมไหนมากกว่ากัน
-หาอัตราชนะของทีม Imposter
-#### code
+#### 1.1 หาอัตราชนะของทีม Imposter
+code
 ```{R}
 ImposterWin <- count(amongUs$Team == "Imposter" & amongUs$ Outcome =="Win" )
 AllImposter <- count(amongUs$Team == "Imposter" )
 
 ImposterWin/AllImposter
 ```
-#### result
+result
 ```{R}
 0.4347826
 ```
-หาอัตราชนะของทีม Crewmate
-#### code
+#### 1.2 หาอัตราชนะของทีม Crewmate
+code
 
 ```{R}
 CrewmateWin <- count(amongUs$Team == "Crewmate" & amongUs$ Outcome =="Win" )
@@ -32,7 +32,7 @@ AllCrewmate <- count(amongUs$Team == "Crewmate" )
 CrewmateWin/AllCrewmate
 
 ```
-#### result
+result
 ```{R}
 0.4805195
 ```
