@@ -49,9 +49,9 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 ## Table of Contents
 
 
-1. [Exploratory Data Analysis](./01.explore.md)
-2. [Data Visualization](./amongUs_original.csv)
-
+1. [All Step](./01.explore.md)
+2. [Exploratory Data Analysis](./ExploratoryDataAnalysis.md)
+3. [Data Cleaning and Data Transformation](./)
 ## Resources
 
 
