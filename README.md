@@ -63,7 +63,6 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 - [products_clean.csv](./clean-data.R): Clean Dataset
 
 ### References
-เปลี่ยนจาก 13m 24s เป็นตัวเลขปกติ
 https://www.youtube.com/watch?v=qsmDfQI4GcM&ab_channel=ContexturesInc.
 
 ## About Us
