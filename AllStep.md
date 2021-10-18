@@ -81,9 +81,26 @@ $ Imposter.Kills          <chr> .....
 
            
 ## Step 5 Cleaning Dataset
+### Loading library and dataset
 ```{R}
-# TransformData
+#Loading library
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(assertive)
+library(readr)
+library(tidyr)
 
+#Loading DataSet
+read.csv("C:\\Users\\Admin\\Desktop\\214mid\\amongUs_original.csv")
+amongUs <- read.csv("C:\\Users\\Admin\\Desktop\\214mid\\amongUs_original.csv")
+View(amongUs)
+```
+
+
+
+### TransformData
+```{R}
 amongUs <- amongUs %>% rename(
   
   Date = X.ปฟGame.Completed.Date,
@@ -94,23 +111,41 @@ amongUs <- amongUs %>% rename(
   MySabotagesFixed = Sabotages.Fixed
   
 )
+```
+### Change data type and remove String
+เช็ค type ของ dataset เรา
+```{R}
+glimpse(amongUs)
+```
+ผลลัพท์ 
+```{R}
+$ X.ปฟGame.Completed.Date <chr> "12/13/2020 at 1:46:30 am EST", "12/13/2020 at 1:37:06 am EST", "12/13/2020 at 1:22:~
+$ Team                    <chr> "Crewmate", "Crewmate", "Imposter", "Crewmate", "Crewmate", "Imposter", "Crewmate", ~
+$ Outcome                 <chr> "Win", "Loss", "Loss", "Win", "Win", "Loss", "Win", "Win", "Loss", "Loss", "Loss", "~
+$ Task.Completed          <chr> "4", "8", "-", "5", "9", "-", "7", "-", "7", "6", "3", "-", "7", "2", "5", "4", "-",~
+$ All.Tasks.Completed     <chr> "No", "Yes", "-", "No", "Yes", "-", "Yes", "-", "Yes", "No", "No", "-", "Yes", "No",~
+$ Murdered                <chr> "Yes", "Yes", "-", "No", "Yes", "-", "No", "-", "No", "No", "No", "-", "No", "No", "~
+$ Imposter.Kills          <chr> "-", "-", "1", "-", "-", "3", "-", "2", "-", "-", "-", "2", "-", "-", "-", "-", "1",~
+$ Game.Length             <chr> 7m29s, 8m24s, 14m26s, 9m25s, 15ms41, 21m05s, 12m34s, 4m07s, 16m02s, 10m29s, 8m00s, 11m53s, 11m07s~
+$ Ejected                 <chr> "No", "No", "No", "No", "No", "Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No", "N~
+$ Sabotages.Fixed         <chr> "2", "1", "N/A", "1", "0", "N/A", "1", "N/A", "1", "0", "0", "N/A", "0", "1", "0", "~
+```
 
-# Cleaning Data
-## Change data type
-
-glimpse(amongUs) ###เช็ค data type ของข้อมูล
-
-### ทุกคอลัมเป็น chr หมดเลย ต้องแก้ทุกตัว
-
-# ลบ - แปลงเป็น numeric
+#### แปลงเป็น numeric
+```{R}
+##ลบ - ออก
 is.numeric(amongUs$MyTaskCompleted)
 amongUs$MyTaskCompleted <- amongUs$MyTaskCompleted %>% str_remove("-") %>% as.numeric()
 
 is.numeric(amongUs$MyKills)
 amongUs$MyKills <- amongUs$MyKills %>% str_remove("-") %>% as.numeric()
 
-
-#แปลงเป็นfactor
+##ลบ N/A ออก
+is.numeric(amongUs$MySabotagesFixed)
+amongUs$MySabotagesFixed <- amongUs$MySabotagesFixed %>% str_remove("N/A") %>% as.numeric()
+```
+#### แปลงเป็น factor เพื่อที่จะนำข้อมูลไปคำนวน
+```{R}
 amongUs$Team <- as.factor(amongUs$Team)
 summary(amongUs$Team)
 
@@ -123,15 +158,17 @@ summary(amongUs$AllTeamTasksCompleted)
 amongUs$Murdered <- as.factor(amongUs$Murdered)
 summary(amongUs$Murdered)
 
-### คอลัม time ไป clean ใน excel โดยใช้ ctrl + H ######
-
 amongUs$Ejected  <- as.factor(amongUs$Ejected)
 summary(amongUs$Ejected)
 
-is.numeric(amongUs$MySabotagesFixed)
-amongUs$MySabotagesFixed <- amongUs$MySabotagesFixed %>% str_remove("N/A") %>% as.numeric()
 
 ```
+#### Game.Length หรือ TotalTimePerMin ใช้ excel ในการแปลงจาก 00m00s เป็น 00.00
+
+โดยการใช้ฟังช์กัน ctrl + H  
+
+![alt text](./timeCleaning.png)
+
 ## Step 6 Define a question
 1. อัตราชนะของทีมไหนมากกว่ากัน
 2. ค่าเฉลี่ยของการทำภารกิจที่เราทำได้ในแต่ละตา และ โอกาศที่ทั้งทีมจะทำภารกิจสำเร็จ
