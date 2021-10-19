@@ -1,9 +1,9 @@
-##  Search datasets from Kaggle
+##  Step 1.) Search datasets from Kaggle
 
 พวกเราเจอ dataset ที่แปลกและน่าสนใจ น่านำมาวิเคราะห์ นั่นคือ dataset ที่เกี่ยวกับข้อมูลของเกม<strong> amongUs</strong> <br>
 Dataset from : https://www.kaggle.com/ruchi798/among-us-dataset/version/27?select=User2.csv
 
-## Explore the dataset from the original dataset
+## Step 2.) Explore the dataset from the original dataset
  <p>Among Us เป็นเกมแนวจับผิด หาคนร้าย ซึ่งในแต่ละคนจะมีการสุ่มบทบาทเป็นของตัวเอง และ มีการเล่น มีการชนะ ได้หลายรูปแบบมาก
  เช่น ฆ่าทุกคน จับคนร้าย ทำภารกิจครบ โหวตออก และอื่นๆอีกมากมาย แต่ละรอบของเกมมีอะไรเกิดที่ไม่ซ้ำกัน ทำให้มีข้อมูลให้เราได้วิเคราะห์ ได้เล่นกับข้อมูลได้หลายอย่าง</p>
  <p>โดยชุดข้อมูลนี้เกี่ยวกับผู้เล่นเกม amongUs เป็นข้อมูลที่บอกว่าระหว่างที่เล่นเขาได้เจอกับอะไรบ้างในรอบๆนั้้น โดยแต่ละรอบก็จะมีข้อมูลที่ไม่เหมือนกัน เช่น ทีมที่อยู่ จำนวนภารกิจ และอื่นๆ.  </p> 
@@ -20,7 +20,7 @@ Dataset from : https://www.kaggle.com/ruchi798/among-us-dataset/version/27?selec
 - Ejected
 - Sabotages Fixed
 
-## Exploratory Data Analysis
+## Data Exploration and Analysis
 จากข้อมูล เรามาดูความหมายและลักษณะของตัวแปรทั้ง 10 ตัวแปรกัน
 - Game Completed Date = วันที่และเวลาที่เล่น ( มีทั้งวันที่และเวลาในตัวแปรเดียว )
 - Team = ทีมที่ผู้เล่นได้รับระหว่างเล่น ( มีสองข้อมูลคือ Crewmate และ Imposter )
