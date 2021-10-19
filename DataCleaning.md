@@ -32,7 +32,7 @@ amongUs <- amongUs %>% rename(
 ```
 ## Step 3.) Clean data
 
-### Change data type
+### 3.1) Check data type
 เช็ค type ของ dataset เรา
 ```{R}
 glimpse(amongUs)
@@ -52,7 +52,7 @@ $ Sabotages.Fixed         <chr> "2", "1", "N/A", "1", "0", "N/A", "1", "N/A", "1
 ```
 <p> เราจะพบว่าทุกตัวแปรเป็น chr หมดเลย </p>
 
-### 3.1) แปลงเป็น numeric และ ลบ String "-" กับ "N/A" ออก
+### 3.2) แปลงเป็น numeric และ ลบ String "-" กับ "N/A" ออก
 ```{R}
 ##ลบ - ออก
 is.numeric(amongUs$MyTaskCompleted)
@@ -65,7 +65,7 @@ amongUs$MyKills <- amongUs$MyKills %>% str_remove("-") %>% as.numeric()
 is.numeric(amongUs$MySabotagesFixed)
 amongUs$MySabotagesFixed <- amongUs$MySabotagesFixed %>% str_remove("N/A") %>% as.numeric()
 ```
-### แปลงเป็น factor เพื่อที่จะนำข้อมูลไปคำนวน
+### 3.3) แปลงเป็น factor เพื่อที่จะนำข้อมูลไปคำนวน
 ```{R}
 amongUs$Team <- as.factor(amongUs$Team)
 summary(amongUs$Team)
@@ -84,7 +84,7 @@ summary(amongUs$Ejected)
 
 
 ```
-### Game.Length หรือ TotalTimePerMin ใช้ excel ในการแปลงจาก 00m00s เป็น 00.00
+### 3.4) Game.Length หรือ TotalTimePerMin ใช้ excel ในการแปลงจาก 00m00s เป็น 00.00
 
 โดยการใช้ฟังช์กัน ctrl + H  
 
