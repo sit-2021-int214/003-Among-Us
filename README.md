@@ -47,8 +47,7 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 ### all of the content
 1. [Exploratory Data Analysis](./ExploratoryDataAnalysis.md)
 2. [Data Cleaning and Data Transformation](./DataCleaning.md)
-3. [Define a question](./DefineQuestion.md)
-4. [Exploratory Data Analysis With Statistics](./EDAwithStat.md)
+3. [Define a question and EDA with stat](./DefineQuestion.md)
 ### Include content
 [All Content](./AllStep.md)
 
