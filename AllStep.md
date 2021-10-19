@@ -6,6 +6,7 @@
 4. Exploratory Data Analysis
 5. Cleaning Dataset
 6. Define a question
+7. Exploratory Data Analysis with Stat
 
 
 ## Step 1 Search datasets from Kaggle
@@ -179,6 +180,8 @@ summary(amongUs$Ejected)
 8. วันไหนที่มีคนเข้ามาเล่นเกมมากที่สุด และช่วงเวลาใด
 9. ค่าเฉลี่ยที่เราจะถูกสุ่มเป็น Crewmate หรือ Imposter ฝั่งไหนมากกว่ากัน
 10. นำข้อมูลทั้ง 9 ข้อมาวิเคราะห์ร่วมกันว่าฝั่งไหนที่จะสามารถชนะได้ก่อนกัน
+
+## Step 7 Exploratory Data Analysis with Stat
 
 ### 1. อัตราชนะของทีมไหนมากกว่ากัน
 หาอัตราชนะของทีม Imposter
