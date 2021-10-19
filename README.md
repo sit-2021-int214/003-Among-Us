@@ -28,14 +28,14 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 6. โอกาศกี่เปอร์เซ็นที่เราจะโดน Imposter ฆ่า
 7. ใช้เวลาในการเล่นเกมน้อยที่สุดแล้วเกมนั้นชนะ
 
-### Steps 
+### Step overview
 
 1. Search datasets from Kaggle
 2. Explore the dataset from the original dataset
-3. Download Library and dataset
-4. Exploratory Data Analysis
-5. Cleaning Dataset
-6. Define a question
+3. Exploratory Data Analysis
+4. Cleaning Dataset
+5. Define a question
+6. EDA with stat
 
 
 ### Tools
