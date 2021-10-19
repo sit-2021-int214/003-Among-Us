@@ -44,12 +44,14 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 - R Studio Desktop
 - Excel
 ## Table of Contents
+### all of the content
+1. [Exploratory Data Analysis](./ExploratoryDataAnalysis.md)
+2. [Data Cleaning and Data Transformation](./DataCleaning.md)
+3. [Define a question](./DefineQuestion.md)
+4. [Exploratory Data Analysis With Statistics](./EDAwithStat.md)
+### Include content
+[All Content](./AllStep.md)
 
-
-1. [All Step](./AllStep.md)
-2. [Exploratory Data Analysis](./ExploratoryDataAnalysis.md)
-3. [Data Cleaning and Data Transformation](./DataCleaning.md)
-4. [Define a question](./DefineQuestion.md)
 ## Resources
 
 
