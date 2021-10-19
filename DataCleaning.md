@@ -1,6 +1,6 @@
-#Cleaning Dataset
+# Cleaning Dataset
 
-## Loading library and dataset
+## Step 1.) Loading library and dataset
 ```{R}
 #Loading library
 library(dplyr)
@@ -16,9 +16,8 @@ amongUs <- read.csv("C:\\Users\\Admin\\Desktop\\214mid\\amongUs_original.csv")
 View(amongUs)
 ```
 
-## Cleaning Dataset
 
-### TransformData
+## Step 2.) TransformData
 ```{R}
 amongUs <- amongUs %>% rename(
   
@@ -31,6 +30,8 @@ amongUs <- amongUs %>% rename(
   
 )
 ```
+## Step 3.) Clean data
+
 ### Change data type
 เช็ค type ของ dataset เรา
 ```{R}
@@ -49,8 +50,9 @@ $ Game.Length             <chr> 7m29s, 8m24s, 14m26s, 9m25s, 15ms41, 21m05s, 12m
 $ Ejected                 <chr> "No", "No", "No", "No", "No", "Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No", "N~
 $ Sabotages.Fixed         <chr> "2", "1", "N/A", "1", "0", "N/A", "1", "N/A", "1", "0", "0", "N/A", "0", "1", "0", "~
 ```
+<p> เราจะพบว่าทุกตัวแปรเป็น chr หมดเลย </p>
 
-### แปลงเป็น numeric
+### 3.1) แปลงเป็น numeric และ ลบ String "-" กับ "N/A" ออก
 ```{R}
 ##ลบ - ออก
 is.numeric(amongUs$MyTaskCompleted)
