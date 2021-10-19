@@ -9,6 +9,35 @@
 7. ระหว่าง Crewmate กับ Imposter ทีมไหนใช้เวลาในการเอาชนะได้ไวกว่ากัน
 
 
+# Exploratory Data Analysis With Stat
+
+## โหลด dataset ที่ clean เรียบร้อยแล้ว และ ลง libery ต่างๆ
+
+result
+```{R}
+##ลงlibraryจต่างๆ
+install.packages("plyr")
+install.packages("dplyr")
+install.packages("stringr")
+install.packages("tidyr")
+install.packages("assertive")
+install.packages("readr")
+install.packages("tidyr")
+
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(assertive)
+library(readr)
+library(tidyr)
+library(plyr)
+
+##โหลดดาต้าที่คลีนแล้วมาใช้
+amongUs <- read.csv("C:\\Users\\Admin\\Desktop\\214mid\\amongUsCleaned.csv")
+View(amongUs)
+
+```
+
 ### 1. อัตราชนะของทีมไหนมากกว่ากัน
 #### 1.1 หาอัตราชนะของทีม Imposter
 code
