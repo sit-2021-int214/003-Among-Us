@@ -49,7 +49,7 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 2. [Data Cleaning and Data Transformation](./DataCleaning.md)
 3. [Define a question and EDA with stat](./DefineQuestion.md)
 ### Include content
-[All Content](./AllStep.md)
+[Include Content](./AllStep.md)
 
 ## 👉 Resources
 
