@@ -60,7 +60,7 @@ Among Us เป็นเกมนึงที่ได้รับความ�
 - [amongUs_original.csv](./amongUs_original.csv): Original Dataset
 - [amongUsCleaned.csv](./amongUs_original.csv): Cleaned Dataset
 - [clean-data.R](./clean-data.R): Code Clean Dataset
-- [EDA with Stat .R](./EDA with Stat .R) : Code EDA with stat
+- [EDA-with-Stat.R](./EDA-with-Stat.R) : Code EDA with stat
 
 ### References
 https://www.youtube.com/watch?v=qsmDfQI4GcM&ab_channel=ContexturesInc.
