@@ -183,7 +183,7 @@ summary(amongUs$Ejected)
 
 ## Step 7 Exploratory Data Analysis with Stat
 
-### 1. อัตราชนะของทีมไหนมากกว่ากัน
+### :question: 1. อัตราชนะของทีมไหนมากกว่ากัน
 หาอัตราชนะของทีม Imposter
 #### code
 ```{R}
@@ -217,7 +217,7 @@ CrewmateWin/AllCrewmate
 อัตราชนะของ Imposter คือ 43%
 ดังนั้น Crewmate มีโอกาศชนะมากกว่า 
 ```
-### 2. ค่าเฉลี่ยของการทำภารกิจที่เราทำได้ในแต่ละตา และ โอกาศที่ทั้งทีมจะทำภารกิจสำเร็จ
+### :question: 2. ค่าเฉลี่ยของการทำภารกิจที่เราทำได้ในแต่ละตา และ โอกาศที่ทั้งทีมจะทำภารกิจสำเร็จ
 #### code
 
 ```{R}
@@ -235,7 +235,7 @@ mean(amongUs$AllTeamTasksCompleted == "Yes") ##โอกาศที่ทั้
 และ โอกาศที่ทั้งทีมจะทำภารกิจสำเร็จคือ 37 %
 ```
 
-### 3. ต้องทำภารกิจประมาณกี่อันต่อคน ภารกิจทั้งทีมถึงจะสำเร็จ , Crewmate win
+### :question: 3. ต้องทำภารกิจประมาณกี่อันต่อคน ภารกิจทั้งทีมถึงจะสำเร็จ , Crewmate win
 #### code
 
 ```{R}
@@ -251,7 +251,7 @@ AllComplet$MyTaskCompleted %>% mean()
 หากต้องการให้ชนะโดยการทำภารกิจสำเร็จ ( ถ้าทุกคนในทีมทำภารกิจครบ ทีม Crewmate จะชนะ ) เราต้องทำภารกิจประมาณ  7.7 ภารกิจให้สำเร็จ
 ```
 
-###  4. ต้องฆ่า Crewmate ประมาณกี่คน Imposter ถึงชนะ
+###  :question: 4. ต้องฆ่า Crewmate ประมาณกี่คน Imposter ถึงชนะ
 #### code
 
 ```{R}
@@ -268,7 +268,7 @@ AllComplet$MyTaskCompleted %>% mean()
 ```{R}
 หากเราได้อยู่ฝั่ง Imposter เราต้องฆ่าผู้เล่นฝั่ง Crewmate ประมาณ 2.4 คน หรือ 3 คน ถึงจะชนะ
 ```
-### 5. แสดงสถิติต่างๆที่เกี่ยวกับระยะเวลาในการเล่น
+### :question: 5. แสดงสถิติต่างๆที่เกี่ยวกับระยะเวลาในการเล่น
 ```{R}
 Cre <- amongUs %>% filter(Team == "Crewmate")  #เวลาเฉลี่ยที่เราเล่นเป็น Crewmate
 Cre$TotalTimePerMin %>% mean()
@@ -310,7 +310,7 @@ CreEj$TotalTimePerMin %>% mean()
 2.) หากเราไม่โดนฆ่าตาย เราจะอยู่ในเกมได้นานมากกว่า
 3.) หากเราเป็น Impster เราจะใช้เวลาอยู่ได้นานมากกว่า Cremate ก่อนจะโดนโหวตออกจากยาน
 ```
-### 6. โอกาศกี่เปอร์เซ็นที่เราจะโดน Imposter ฆ่า
+### :question:  6. โอกาศกี่เปอร์เซ็นที่เราจะโดน Imposter ฆ่า
 ```{R}
 dead <- amongUs %>% filter( Team == "Crewmate") 
 mean(dead$Murdered == "Yes")
@@ -323,7 +323,7 @@ mean(dead$Murdered == "Yes")
 ```{R}
 โอกาศที่เราจะโดนฆ่าโดย Imposter นั้นมีถึง 46%
 ```
-### 7. ระหว่าง Crewmate กับ Imposter ทีมไหนใช้เวลาในการเอาชนะได้ไวกว่ากัน
+### :question: 7. ระหว่าง Crewmate กับ Imposter ทีมไหนใช้เวลาในการเอาชนะได้ไวกว่ากัน
 ```{R}
 ImWin <-amongUs %>% filter(Team == "Imposter" , Outcome =="Win")
 ImWin$TotalTimePerMin %>% mean() #ค่าเฉลี่ยของเวลาที่ Imposter ชนะ
@@ -357,7 +357,7 @@ CreWin$TotalTimePerMin %>% min() #เวลาที่ Crewmate ใช้น้
 
 ```
 
-### 8. ค่าเฉลี่ยที่เราจะถูกสุ่มเป็น Crewmate หรือ Imposter ฝั่งไหนมากกว่ากัน
+### :question: 8. ค่าเฉลี่ยที่เราจะถูกสุ่มเป็น Crewmate หรือ Imposter ฝั่งไหนมากกว่ากัน
 ```{R}
 CrewmateWin <- count(amongUs$Team) ##นับจำนวนแต่ละทีม ได้ cre 77 im 23
 
