@@ -270,13 +270,45 @@ AllComplet$MyTaskCompleted %>% mean()
 ```
 ### 5. แสดงสถิติต่างๆที่เกี่ยวกับระยะเวลาในการเล่น
 ```{R}
+Cre <- amongUs %>% filter(Team == "Crewmate")  #เวลาเฉลี่ยที่เราเล่นเป็น Crewmate
+Cre$TotalTimePerMin %>% mean()
+
+im <- amongUs %>% filter(Team == "Imposter")  #เวลาเฉลี่ยที่เราเล่นเป็น Imposter
+im$TotalTimePerMin %>% mean()
+
+
+die <- amongUs %>% filter(Team == "Crewmate" , Murdered == "Yes")  #เวลาเฉลี่ยที่เราอยู่ในเกมแล้วโดนฆ่า
+die$TotalTimePerMin %>% mean()
+
+NotDie <- amongUs %>% filter(Team == "Crewmate" , Murdered == "No")  #เวลาเฉลี่ยที่เราอยู่ในเกมแล้วไม่โดนฆ่าตาย
+NotDie$TotalTimePerMin %>% mean()
+
+ImEj <- amongUs %>% filter(Team == "Imposter" , Ejected == "Yes")  #เวลาเฉลี่ยที่เราเป็น Imposter แล้วโดนโหวตออก
+ImEj$TotalTimePerMin %>% mean()
+
+CreEj <- amongUs %>% filter(Team == "Crewmate" , Ejected == "Yes")  #เวลาเฉลี่ยที่เราเป็น Crewmate แล้วโดนโหวตออก
+CreEj$TotalTimePerMin %>% mean()
 ```
 #### result
 ```{R}
-
+#เวลาเฉลี่ยที่เราเล่นเป็น Crewmate
+10.42857
+#เวลาเฉลี่ยที่เราเล่นเป็น Imposter
+9.697826
+#เวลาเฉลี่ยที่เราอยู่ในเกมแล้วโดนฆ่า
+9.706389
+#เวลาเฉลี่ยที่เราอยู่ในเกมแล้วไม่โดนฆ่าตาย
+11.06268 
+#เวลาเฉลี่ยที่เราเป็น Imposter แล้วโดนโหวตออก
+12.182
+#เวลาเฉลี่ยที่เราเป็น Crewmate แล้วโดนโหวตออก
+10.7675
 ```
 #### สรุปผล
 ```{R}
+1.) หากเราเป็น Cremate จะมีเวลาเล่นอยู่ในเกมได้นานกว่า Imposter
+2.) หากเราไม่โดนฆ่าตาย เราจะอยู่ในเกมได้นานมากกว่า
+3.) หากเราเป็น Impster เราจะใช้เวลาอยู่ได้นานมากกว่า Cremate ก่อนจะโดนโหวตออกจากยาน
 ```
 ### 6. โอกาศกี่เปอร์เซ็นที่เราจะโดน Imposter ฆ่า
 ```{R}
@@ -324,35 +356,31 @@ CreWin$TotalTimePerMin %>% min() #เวลาที่ Crewmate ใช้น้
 ดังนั้นจึงสรุปได้ว่า ทีม Imposter นั้น ใช้เวลาในการเอาชนะไวกว่าทีม Crewmate
 
 ```
-### 8. วันไหนที่มีคนเข้ามาเล่นเกมมากที่สุด และช่วงเวลาใด
+
+### 8. ค่าเฉลี่ยที่เราจะถูกสุ่มเป็น Crewmate หรือ Imposter ฝั่งไหนมากกว่ากัน
 ```{R}
+CrewmateWin <- count(amongUs$Team) ##นับจำนวนแต่ละทีม ได้ cre 77 im 23
+
+77/100   #จำนวนในแต่ละทีมหารด้วยจำนวนทั้งหมด
+23/100
 ```
 #### result
 ```{R}
+> CrewmateWin
+         x freq
+1 Crewmate   77
+2 Imposter   23
 
+> 77/100
+[1] 0.77
+> 23/100
+[1] 0.23
 ```
 #### สรุปผล
 ```{R}
+โอกาศที่จะเป็น Crewmate 77%
+โอกาศที่จะเป็น Imposter 23% 
+ดังนั้นเรามีโอกาศที่จะอยู่ทีม Crewmate มากกว่า
 ```
 
-### 9. ค่าเฉลี่ยที่เราจะถูกสุ่มเป็น Crewmate หรือ Imposter ฝั่งไหนมากกว่ากัน
-```{R}
-```
-#### result
-```{R}
 
-```
-#### สรุปผล
-```{R}
-```
-
-### 10. นำข้อมูลทั้ง 9 ข้อมาวิเคราะห์ร่วมกันว่าฝั่งไหนที่จะสามารถชนะได้ก่อนกัน
-```{R}
-```
-#### result
-```{R}
-
-```
-#### สรุปผล
-```{R}
-```
