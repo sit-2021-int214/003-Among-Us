@@ -12,64 +12,13 @@ Choose Dataset:
 3. [Transform data with dplyr and finding insight the data](./TransformAndFindingData.md)
 4. [Visualization with GGplot2](./Vitualization.md)
 
-## Part 1: Explore the dataset
-
-```
-# Library
-library(name)
-
-# Dataset
-dataset <- read_csv("")
-```
-
-In this dataset has .....
 
 
 
-## Part 2: Learning function from Tidyverse
 
-- Function `select()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for select columns
 
-```
-starwars %>% select(name,height)
-```
-** You can sepearate this part or combine in part of `Transform data with dplyr and finding insight the data`
 
-## Part 3: Transform data with dplyr and finding insight the data
 
-//Explain here
-
-```
-#Code here
-```
-
-Result:
-
-```
-#Copy Result from console to here
-```
-//Explain
-
-- list 1
-- list 2
-
-## Part 4: Visualization with GGplot2
-### 1.) Graph show relation between height and mass
-```
-scat_plot <- starwars %>% filter(mass<500) %>% ggplot(aes(x=height,y=mass))+
-  geom_point(aes(color=gender))
-
-scat_plot+geom_smooth()
-```
-Result:
-
-![Graph 1](graph1.png)
-
-**Guideline:
-Embed Image by using this syntax in markdown file
-````
-![Name](imageFile)
-````
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
