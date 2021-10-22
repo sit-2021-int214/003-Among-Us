@@ -7,10 +7,10 @@ Choose Dataset:
 
 
 ### Outlines
-1. Explore the dataset
-2. Learning function from Tidyverse
-3. Transform data with dplyr and finding insight the data
-4. Visualization with GGplot2
+1. [Explore the dataset](./ExploreData.md)
+2. [Learning function from Tidyverse](./LearningFunction.md)
+3. [Transform data with dplyr and finding insight the data](./TransformAndFindingData.md)
+4. [Visualization with GGplot2](./Vitualization.md)
 
 ## Part 1: Explore the dataset
 
