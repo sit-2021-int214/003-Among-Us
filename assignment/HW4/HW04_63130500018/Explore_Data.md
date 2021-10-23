@@ -1,5 +1,5 @@
 # Part 1 : Explore the dataset
-### Step 1 : ทำการเรียกใช้ library
+### Step 1 : ทำการเรียกใช้ Library
 ```{R}
 #Library
 library(dplyr)
