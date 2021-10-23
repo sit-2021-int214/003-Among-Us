@@ -143,14 +143,12 @@ max_page$Price - min_page$Price
 #### Result
 ```
 #max_page
-# A tibble: 1 x 3
+
   Book_title                                    Number_Of_Pages Price
   <fct>                                                   <dbl> <dbl>
 1 The Art of Computer Programming, Volumes 1-4~            3168  220.
 
 #min_page
-> min_page
-# A tibble: 1 x 3
   Book_title                                   Number_Of_Pages Price
   <fct>                                                  <dbl> <dbl>
 1 Responsive Web Design Overview For Beginners              50  11.3
