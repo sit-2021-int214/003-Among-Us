@@ -21,6 +21,17 @@ dbl (3): Rating, Number_Of_Pages, Price
 i Use `spec()` to retrieve the full column specification for this data.
 i Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
+และทำการแปลง Type ของ data
+```
+#Changing the types of values 
+prog_book$Book_title <- as.factor(prog_book$Book_title)
+
+prog_book$Description <- as.factor(prog_book$Description)
+
+prog_book$Type <- as.factor(prog_book$Type)
+
+prog_book$Number_Of_Pages <- as.numeric(prog_book$Number_Of_Pages)
+```
 
 ### Step 2: ทำการศึกษาข้อมูลในชุดนี้
 ```
