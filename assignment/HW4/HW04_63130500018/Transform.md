@@ -4,7 +4,7 @@
 #### Code
 ```{R}
 Programing_Books %>% select(Book_title, Rating) %>%
-  slice_max(Reviews, n=5)
+  slice_max(Rating, n=5)
 ```
 #### Result
 ```{R}
