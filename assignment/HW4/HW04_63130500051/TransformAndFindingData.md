@@ -70,12 +70,12 @@ prog_book %>% count(Type == "Unknown Binding")
 #### สรุปผล
 ```
 หนังสือมีทั้งหมด 6 ประเภท ดังนี้
-1 Hardcover            
-2 Kindle Edition       
-3 Paperback            
-4 ebook                
-5 Unknown Binding      
-6 Boxed Set - Hardcover
+1. Hardcover            
+2. Kindle Edition       
+3. Paperback            
+4. ebook                
+5. Unknown Binding      
+6. Boxed Set - Hardcover
 ```
 
 ### ✨4. แสดง 10 อันดับหนังสือที่มีราคาถูกที่สุด
