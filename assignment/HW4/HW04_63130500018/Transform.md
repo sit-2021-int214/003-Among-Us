@@ -1,6 +1,7 @@
 # Part 2 : Learning function from Tidyverse & Transform data with dplyr and finding insight the data
 
 #### 1. หนังสือที่มี Rating สูงที่สุด 5 อันดับแรก
+- ฟังก์ชัน slice_max() มาจาก packet  dplyr และฟังก์ชันดังกล่าวเป็นการหาข้อมูลที่มีค่ามากที่สุด โดยเราสามารถกำหนดได้ว่าต้องการข้อมูลเท่าไหร่ก็ได้
 #### Code
 ```{R}
 Programing_Books %>% select(Book_title, Rating) %>%
@@ -15,7 +16,10 @@ Book_title                                                                      
 4 Build Web Applications with Java: Learn every aspect to build web applications from scratch                 4.67
 5 Fluent Python: Clear, Concise, and Effective Programming                                                    4.67
 ```
-#### 2. หาหนังสือที่มี ราคาถูกที่สุด 2 เล่ม
+สรุป : หนังสือที่มี Rating สูงสุด 5 อันดับแรกได้แก่ ' Your First App: Node.js', 'The Art of Computer Programming, Volumes 1-4a Boxed Set', 'Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems', 'Build Web Applications with Java: Learn every aspect to build web applications from scratch', 'Fluent Python: Clear, Concise, and Effective Programming'
+
+#### 2. หาหนังสือที่มี ราคาถูกที่สุด 3 เล่ม
+- ฟังก์ชัน slice_min() มาจาก packet  dplyr และฟังก์ชันดังกล่าวเป็นการหาข้อมูลที่มีค่าน้อยที่สุด โดยเราสามารถกำหนดได้ว่าต้องการข้อมูลเท่าไหร่ก็ได้
 #### Code
 ```{R}
 Programing_Books %>%select(Book_title,Price) %>% 
@@ -28,6 +32,8 @@ Programing_Books %>%select(Book_title,Price) %>%
 2 The Information: A History, a Theory, a Flood   11.000000
 3 Responsive Web Design Overview For Beginners    11.267647           
 ```
+สรุป : หนังสือที่มีราคาถูกที่สุด 3 เล่ม ได้แก่ 'The Elements of Style', 'The Information: A History, a Theory, a Flood', 'Responsive Web Design Overview For Beginners'
+
 #### 3. แสดงหนังสือเล่มที่มีการ Review มากที่สุด และน้อยที่สุด
 #### Code
 ```{R}
@@ -62,6 +68,8 @@ Book_title                                                                      
 23 Game Programming Gems 3                                                                                     0
 24 3D Game Engine Architecture: Engineering Real-Time Applications with Wild Magic (The Morgan Kaufmann Series in Interactive 3d Technology)       0
 ```
+สรุป : หนังสือที่มีการ Review มากที่สุด มีจำนวน 2 เล่ม และหนังสือที่มีจำนวนการ Review น้อยที่สุด มีจำนวน 22 เล่ม
+
 #### 4. แสดงประเภทของหนังสือที่มีจำนวนหน้ามากกว่า 1000
 #### Code
 ```{R}
@@ -89,6 +97,10 @@ Programing_Books %>%
 15 Paperback            1040
 16 Hardcover            3168          
 ```
+สรุป : ประเภทของหนังสือที่มีมากกว่า 1000 หน้า มี 2 ประเภท 
+     - ประเภทที่ 1 คือ Paperback         มี 5 เล่ม 
+     - ประเภทที่ 2 คือ Hardcover         มี 11 เล่ม
+
 #### 5. แสดงหนังสือที่มีราคามากกว่า 15 และมีจำนวนหน้าน้อยที่สุด
 #### Code
 ```{R}
@@ -100,6 +112,8 @@ Programing_Books %>% select(Book_title, Number_Of_Pages, Price) %>%
     Book_title Number_Of_Pages                                Price
 1 The Principles of Object-Oriented JavaScript             120 27.24412 
 ```
+สรุป : หนังสือที่มีราคามากกว่า 15 และมีจำนวนหน้าน้อยที่สุด คือ The Principles of Object-Oriented JavaScript 
+
 #### 6. หาว่าหนังสือแต่ละประเภท มีจำนวนหนังสือที่มีราคามากกว่าค่าเฉลี่ยของราคาอยู่ประเภทละกี่เล่ม
 #### Code
 ```{R}
@@ -114,3 +128,9 @@ filter(Price > mean(Price)) %>% group_by(Type) %>% count()
 3 Hardcover                61
 4 Paperback                40
 ```
+สรุป : หนังสือแต่ละประเภท มีจำนวนหนังสือที่มีราคามากกว่าค่าเฉลี่ยของราคาอยู่ประเภท มีอยู่ 4 ประเภท
+      - ประเภทที่ 1 คือ Boxed Set - Hardcover มีจำนวน 1 เล่ม
+      - ประเภทที่ 2 คือ ebook                 มีจำนวน 3 เล่ม
+      - ประเภทที่ 3 คือ Hardcover             มีจำนวน 61 เล่ม
+      - ประเภทที่ 4 คือ Paperback             มีจำนวน 40 เล่ม
+      
