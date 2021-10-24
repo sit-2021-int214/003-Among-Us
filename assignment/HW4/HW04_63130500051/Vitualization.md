@@ -25,4 +25,4 @@ Result:
 
 จากการฟด้านบน แสดงจำนวนหนังสือโดยแยกแต่ละประเภทของหนังสือ จะเห็นได้ว่าหนังสือประเภท Paperback มีจำนวนมากที่สุด
 
-[ย้อนกลับไปที่หน้าหลัก](./README.md)
+### Creating Interaction Dashboard with BI Tools : Power BI to make a graph [Click here]()
