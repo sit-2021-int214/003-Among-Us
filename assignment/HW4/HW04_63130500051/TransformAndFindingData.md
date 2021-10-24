@@ -161,3 +161,6 @@ max_page$Price - min_page$Price
 หนังสือที่มีจำนวนหน้าที่ohvpl6f คือ Responsive Web Design Overview For Beginners มีจำนวน 50 หน้า ราคาอยู่ที่ $50
 
 ```
+จากการทำ Transform data with dplyr and finding insight the data เสร็จแล้ว 
+ต่อไปจะเป็นการทำมาทำ Visualization with GGplot2 [ไปเริ่มเลอ](./Vitualization.md)
+
