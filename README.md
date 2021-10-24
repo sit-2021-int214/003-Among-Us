@@ -57,7 +57,6 @@ Among Us เป็นเกมที่ได้รับความนิย�
 
 ### Important Files in Repository
 
-- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
 - [amongUs_original.csv](./amongUs_original.csv): Original Dataset
 - [amongUsCleaned.csv](./amongUs_original.csv): Cleaned Dataset
 - [clean-data.R](./clean-data.R): Code Clean Dataset
