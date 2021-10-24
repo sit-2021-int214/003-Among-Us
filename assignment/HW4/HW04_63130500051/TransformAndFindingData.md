@@ -138,7 +138,6 @@ min_page <- prog_book %>% select(Book_title, Number_Of_Pages, Price) %>%
   filter(Number_Of_Pages == min(Number_Of_Pages))
 min_page
 
-max_page$Price - min_page$Price
 ```
 #### Result
 ```
