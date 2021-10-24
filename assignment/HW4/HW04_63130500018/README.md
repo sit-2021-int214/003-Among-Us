@@ -10,7 +10,6 @@ Top 270 Computer Science / Programing Books (Data from Thomas Konstantin, [Kaggl
 1. [Explore the dataset](./Explore_Data.md)
 2. [Learning function from Tidyverse & Transform data with dplyr and finding insight the data](./Transform.md)
 3. [Visualization with GGplot2](./Visual.md)
-4. [PartB : Tools] 
 
 ### About
 
