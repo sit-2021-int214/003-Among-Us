@@ -11,7 +11,7 @@ Choose Dataset:
 2. [Learning function from Tidyverse](./LearningFunction.md)
 3. [Transform data with dplyr and finding insight the data](./TransformAndFindingData.md)
 4. [Visualization with GGplot2](./Vitualization.md)
-5. [Visualization with Power BI](https://app.powerbi.com/view?r=eyJrIjoiMTE2ZDgzMTEtMDI4Zi00OGY1LTliMjgtMTRkYjMyNTE0YmQyIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D target="_blank")
+5. [Visualization with Power BI](https://app.powerbi.com/view?r=eyJrIjoiMTE2ZDgzMTEtMDI4Zi00OGY1LTliMjgtMTRkYjMyNTE0YmQyIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
 
 
 
