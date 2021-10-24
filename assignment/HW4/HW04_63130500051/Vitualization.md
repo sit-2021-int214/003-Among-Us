@@ -25,4 +25,4 @@ Result:
 
 จากการฟด้านบน แสดงจำนวนหนังสือโดยแยกแต่ละประเภทของหนังสือ จะเห็นได้ว่าหนังสือประเภท Paperback มีจำนวนมากที่สุด
 
-### Creating Interaction Dashboard with BI Tools : Power BI to make a graph [Click here](https://app.powerbi.com/view?r=eyJrIjoiMTE2ZDgzMTEtMDI4Zi00OGY1LTliMjgtMTRkYjMyNTE0YmQyIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
+### Creating Interaction Dashboard with BI Tools : Power BI to make a graph 👉[Click here](https://app.powerbi.com/view?r=eyJrIjoiMTE2ZDgzMTEtMDI4Zi00OGY1LTliMjgtMTRkYjMyNTE0YmQyIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
