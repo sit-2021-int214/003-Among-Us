@@ -106,7 +106,7 @@ toplowprice
 หนังสือที่มีราคาถูกที่สุดคือ The Elements of Style  มีราคาอยู่ที่ $9.32 
 ```
 
-### ✨5. แสดงอันดับหนังสือที่มีการ Review มากที่สุด
+### ✨5. แสดง 5 อันดับหนังสือที่มีการ Review มากที่สุด
 #### code
 ```
 top_review  <- prog_book %>% select(Book_title, Reviews) %>% slice_max(Reviews, n=5)
