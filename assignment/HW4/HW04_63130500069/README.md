@@ -85,12 +85,51 @@ Result :
 
 ## Part 2: Learning other function 
 
-- Function `select()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for select columns
+- Function `slice_max()` from package [dplyr](https://dplyr.tidyverse.org/articles/base.html?q=sli#slice-choose-rows-by-position)). ซึ่งฟังก์ชันนี้ใช้สำหรับตัดเอาค่ามากที่สุดตามที่ต้องการมา โดยสามารถตัดมากี่ข้อมูลก็ได้ตามที่เราต้องการ
 
 ```
-starwars %>% select(name,height)
+mtcars %>% slice_max(mpg, n = 5)
+
+#>                 mpg cyl disp  hp drat    wt  qsec vs am gear carb
+#> Toyota Corolla 33.9   4 71.1  65 4.22 1.835 19.90  1  1    4    1
+#> Fiat 128       32.4   4 78.7  66 4.08 2.200 19.47  1  1    4    1
+#> Honda Civic    30.4   4 75.7  52 4.93 1.615 18.52  1  1    4    2
+#> Lotus Europa   30.4   4 95.1 113 3.77 1.513 16.90  1  1    5    2
+#> Fiat X1-9      27.3   4 79.0  66 4.08 1.935 18.90  1  1    4    1
 ```
-** You can sepearate this part or combine in part of `Transform data with dplyr and finding insight the data`
+- Function `slice_max()` from package [ggplot2](https://ggplot2.tidyverse.org/)) เป็นฟังก์ชันที่เราใช้สำหรับแบ่งกราฟออกเป็นหลายๆกราฟ ตามชนิดของข้อมูลที่เรามีได้ ตัวอย่าง
+<p> เราใช้ dataset Marvel characters แล้วลองมาทำกราฟแสดงข้อมูลระหว่างปีกับจำนวนฮีโร่ที่เกิดมา </p>
+
+```
+ggplot(data = marvel_count, aes(year, n)) +
+  geom_line(color = "steelblue",size = 1) +
+  geom_point(color="steelblue") + 
+  labs(title = "New Marvel characters by year",
+       subtitle = "(limited to characters with more than 100 appearances)",
+       y = "Count of new characters", x = "")
+```
+Result:
+![Graph 1](facet_plot1.png)
+
+### ใน dataset นี้มีข้อมูลของตัวละครที่ "ดี" และ "ไม่ดี" หากเราอยากแยกเป็นสองกราฟมาเปรียบเทียบกัน เราสามารถใช้  facet_wrap() ได้
+
+```
+  ggplot(data = marvel_count, aes(year, n)) +
+  geom_line(color = "steelblue", size = 1) +
+  geom_point(color="steelblue") + 
+  labs(title = "New Marvel characters by alignment",
+       subtitle = "(limited to characters with more than 100 appearances)",
+       y = "Count of new characters", x = "") + 
+  facet_wrap(~ align)
+  
+```
+
+Result:
+![Graph 1](facet_plot2_wrap.png)
+
+<p> จะเห็นว่ากราฟของเราจะแบ่งเป็นสามอันตามจำนวนข้อมูลของ align ใน dataset  
+
+
 
 ## Part 3: finding insight the data
 
