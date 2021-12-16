@@ -49,6 +49,7 @@ Among Us เป็นเกมที่ได้รับความนิย�
 1. [Data Exploration](./DataExploration.md)
 2. [Data Cleaning and Data Transformation](./DataCleaning.md)
 3. [Define a question and EDA with stat](./DefineQuestion.md)
+4. [Analytical Inferential Statistics](./hypothesis_testing.md)
 ### Include content
 [Include Content](./AllStep.md)
 
