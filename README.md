@@ -50,6 +50,8 @@ Among Us เป็นเกมที่ได้รับความนิย�
 2. [Data Cleaning and Data Transformation](./DataCleaning.md)
 3. [Define a question and EDA with stat](./DefineQuestion.md)
 4. [Analytical Inferential Statistics](./hypothesis_testing.md)
+5. [Presentation](https://www.canva.com/design/DAEyg-9MsW0/KYvDwCz0TYRS6em5zmMxJQ/view?utm_content=DAEyg-9MsW0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+6. [Data Visualization](data_viz.md)
 ### Include content
 [Include Content](./AllStep.md)
 
